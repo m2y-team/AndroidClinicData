@@ -17,6 +17,10 @@
         </activity>
         <activity android:name=".menu">
         </activity>
+        <activity android:name=".patientList">
+        </activity>
+        <activity android:name=".Patient">
+        </activity>
     </application>
 
 </manifest>
