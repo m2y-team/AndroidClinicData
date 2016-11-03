@@ -26,13 +26,19 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginBottom="19dp" android:id="@+id/login_editText" android:hint="@string/login"
-        android:layout_above="@+id/password_editText" android:layout_centerHorizontal="true"/>
+        android:layout_marginBottom="19dp"
+        android:id="@+id/login_editText"
+        android:hint="@string/login"
+        android:layout_above="@+id/password_editText"
+        android:layout_centerHorizontal="true"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:layout_marginBottom="40dp" android:id="@+id/password_editText" android:hint="@string/password"
-        android:layout_above="@+id/signInButton" android:layout_alignStart="@+id/login_editText"/>
+        android:layout_marginBottom="40dp"
+        android:id="@+id/password_editText"
+        android:hint="@string/password"
+        android:layout_above="@+id/signInButton"
+        android:layout_alignStart="@+id/login_editText"/>
 </RelativeLayout>

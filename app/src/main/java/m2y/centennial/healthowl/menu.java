@@ -29,7 +29,7 @@ public class menu extends AppCompatActivity {
     }
 
     private void goPatientList(String testChoice){
-        Intent intent = new Intent(this, patientMain.class);
+        Intent intent = new Intent(this, patientList.class);
         intent.putExtra("testChoice", testChoice);
         startActivity(intent);
     }
