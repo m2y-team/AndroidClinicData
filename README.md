@@ -43,3 +43,5 @@ Functionality:
   Patient's functionality and Samsung SDK:
   Health Owl has another layer of visibility for patients.
   Measure and upload health data (beartbeat rate, step count, and stress level). This data is collected by S Health app and is exportable to a third party app.
+
+ModiYesha Trying to commit
