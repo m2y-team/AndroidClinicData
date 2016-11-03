@@ -16,12 +16,11 @@
         android:id="@+id/my_Detail_toolbar"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"/>
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/my_Detail_toolbar"
-        android:layout_alignParentStart="true" android:layout_marginStart="123dp"
-        android:layout_marginTop="111dp" android:id="@+id/toPatientLink"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:layout_below="@+id/my_Detail_toolbar">
+    </ListView>
 
 
 </RelativeLayout>
