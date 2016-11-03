@@ -15,12 +15,21 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity android:name=".menu">
         </activity>
-        <activity android:name=".patientList">
+
+        <activity
+            android:name=".patientList"
+            android:parentActivityName=".menu">
+            <meta-data
+                android:name="android.support.ParentACTIVITY"
+                android:value=".menu"/>
         </activity>
-        <activity android:name=".Patient">
+
+        <activity android:name=".patientMain">
         </activity>
+
     </application>
 
 </manifest>
