@@ -1,5 +1,6 @@
 package m2y.centennial.healthowl.patient;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -10,17 +11,21 @@ import m2y.centennial.healthowl.R;
 
 public class patientMain extends AppCompatActivity {
 
+    private String mTitle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_main);
+
+        Intent intent = getIntent();
+        mTitle = intent.getStringExtra("patientChoice");
 
         //Set up Menu with back button
         Toolbar myPatientToolbar = (Toolbar)findViewById(R.id.patientToolBar);
         setSupportActionBar(myPatientToolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Patients");
+        getSupportActionBar().setTitle(mTitle);
 
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
@@ -31,7 +36,6 @@ public class patientMain extends AppCompatActivity {
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
-
 
     }
 }

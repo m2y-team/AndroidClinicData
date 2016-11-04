@@ -26,13 +26,11 @@ public class PageFragment1 extends Fragment {
         return fragment;
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPage = getArguments().getInt(ARG_PARAM1);
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

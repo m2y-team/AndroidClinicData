@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import m2y.centennial.healthowl.appointment.MainAppointments;
+import m2y.centennial.healthowl.groups.GroupMainActivity;
 import m2y.centennial.healthowl.patient.patientList;
 
 
@@ -14,6 +15,7 @@ public class menu extends AppCompatActivity {
 
     private Button mPatient;
     private Button mAppointment;
+    private Button mGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,16 @@ public class menu extends AppCompatActivity {
             }
         });
 
+        mGroup = (Button) findViewById(R.id.GroupsButton);
+        mGroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String testChoice = "test";
+                goGroup(testChoice);
+
+            }
+        });
+
     }
 
     private void goPatientList(String testChoice){
@@ -54,5 +66,9 @@ public class menu extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    private void goGroup(String testChoice){
+        Intent intent = new Intent(this, GroupMainActivity.class);
+        intent.putExtra("testChoice", testChoice);
+        startActivity(intent);
+    }
 }

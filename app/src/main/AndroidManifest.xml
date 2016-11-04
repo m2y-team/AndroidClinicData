@@ -40,6 +40,7 @@
         </activity>
         <activity android:name=".appointment.AppointmentTabs">
         </activity>
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
@@ -49,6 +50,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".groups.GroupMainActivity" />
+        <activity android:name=".groups.GroupAdd" />
+        <activity android:name=".groups.GroupDetails"></activity>
     </application>
 
 </manifest>

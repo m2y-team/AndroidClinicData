@@ -6,16 +6,15 @@
     android:orientation="vertical">
 
     <android.support.design.widget.TabLayout
-        android:id="@+id/sliding_tabs"
+        android:id="@+id/sliding_tabs_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabMode="scrollable" />
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_weight="1"
-        android:background="@android:color/white" />
+        android:background="@android:color/white" android:id="@+id/view_pager_app"/>
 
 </LinearLayout>
