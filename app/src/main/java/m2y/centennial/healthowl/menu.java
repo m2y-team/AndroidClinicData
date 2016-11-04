@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import m2y.centennial.healthowl.appointment.MainAppointments;
+import m2y.centennial.healthowl.patient.patientList;
+
 
 public class menu extends AppCompatActivity {
 

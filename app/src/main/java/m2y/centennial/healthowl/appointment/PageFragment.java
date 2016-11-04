@@ -1,4 +1,4 @@
-package m2y.centennial.healthowl;
+package m2y.centennial.healthowl.appointment;
 
 
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import m2y.centennial.healthowl.R;
 
 /**
  * Created by yesha on 2016-10-21.

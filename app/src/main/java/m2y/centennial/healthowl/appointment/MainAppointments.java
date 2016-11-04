@@ -1,4 +1,4 @@
-package m2y.centennial.healthowl;
+package m2y.centennial.healthowl.appointment;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+
+import m2y.centennial.healthowl.R;
 
 public class MainAppointments extends AppCompatActivity {
 

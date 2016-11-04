@@ -1,4 +1,4 @@
-package m2y.centennial.healthowl;
+package m2y.centennial.healthowl.patient;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class PatientFragmentAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 3;
-    private String tabTitles[] = new String[] { "Tab1", "Tab2", "Tab3" };
+    private String tabTitles[] = new String[] { "Information", "Appointment", "Test" };
     private Context context;
 
     public PatientFragmentAdapter(FragmentManager fm, Context context) {

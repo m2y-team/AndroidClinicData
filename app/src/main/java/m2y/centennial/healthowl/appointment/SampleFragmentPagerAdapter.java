@@ -1,4 +1,4 @@
-package m2y.centennial.healthowl;
+package m2y.centennial.healthowl.appointment;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

@@ -1,4 +1,4 @@
-package m2y.centennial.healthowl;
+package m2y.centennial.healthowl.patient;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,9 +7,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import m2y.centennial.healthowl.R;
 
 public class patientList extends AppCompatActivity {
 
@@ -22,33 +23,29 @@ public class patientList extends AppCompatActivity {
         setContentView(R.layout.activity_patient_list);
 
         //Set up Menu with back button
-        Toolbar myDetailsToolbar = (Toolbar)findViewById(R.id.my_Detail_toolbar);
+        Toolbar myDetailsToolbar = (Toolbar)findViewById(R.id.patientToolBar);
         setSupportActionBar(myDetailsToolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        myDetailsToolbar.setTitle("My title");
+        getSupportActionBar().setTitle("Patients");
 
 
         // Get ListView object from xml
         listView = (ListView) findViewById(R.id.list);
 
         // Defined Array values to show in ListView
-        String[] values = new String[] { "Android List View",
-                "Adapter implementation",
-                "Simple List View In Android",
-                "Create List View Android",
-                "Android Example",
-                "List View Source Code",
-                "List View Array Adapter",
-                "Android Example List View",
-                "Adapter implementation",
-                "Simple List View In Android",
-                "Create List View Android",
-                "Android Example",
-                "List View Source Code",
-                "List View Array Adapter",
-                "Android Example List View"
-
+        String[] values = new String[] {
+                "John Dorian",
+                "Elliot Reid",
+                "Christopher Turk",
+                "Perry Cox",
+                "Bob Kelso",
+                "Todd Quinlan",
+                "Ted Buckland",
+                "Laverne Roberts",
+                "Jordan Sullivan",
+                "Carla Espinosa",
+                "Kim Briggs"
         };
 
         // Define a new Adapter

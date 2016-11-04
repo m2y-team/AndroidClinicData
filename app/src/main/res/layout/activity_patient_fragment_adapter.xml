@@ -5,6 +5,6 @@
     android:id="@+id/activity_patient_fragment_adapter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="m2y.centennial.healthowl.PatientFragmentAdapter">
+    tools:context="m2y.centennial.healthowl.patient.PatientFragmentAdapter">
 
 </RelativeLayout>
