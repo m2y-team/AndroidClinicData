@@ -40,15 +40,18 @@ public class PageFragment extends Fragment {
         View view;
         if(mPage == 1){
             view = inflater.inflate(R.layout.fragment_emergency, container, false);
+            return view;
         }
         if(mPage == 2){
             view = inflater.inflate(R.layout.fragment_clinicalsigns, container, false);
+            return view;
         }
         else{
             view = inflater.inflate(R.layout.fragment_diagnosis, container, false);
+            return view;
         }
-        TextView textView = (TextView) view.findViewById(R.id.textview);
-        textView.setText("Fragment #" + mPage);
-        return view;
+        //TextView textView = (TextView) view.findViewById(R.id.textview);
+        //textView.setText("Fragment #" + mPage);
+        //return view;
     }
 }

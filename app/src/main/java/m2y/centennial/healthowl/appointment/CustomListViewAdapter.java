@@ -1,6 +1,7 @@
 package m2y.centennial.healthowl.appointment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import m2y.centennial.healthowl.R;
-import m2y.centennial.healthowl.appointment.MainAppointments;
 
 /**
  * Created by yesha on 2016-11-01.
@@ -73,6 +73,14 @@ import m2y.centennial.healthowl.appointment.MainAppointments;
                 }
             });
             return rowView;
+
+
         }
+
+//    private void goAppointmentTabs(String Appointment){
+//        Intent intent = new Intent(this, AppointmentTabs.class);
+//        intent.putExtra("Appointment", Appointment);
+//        startActivity(intent);
+//    }
 
     }
