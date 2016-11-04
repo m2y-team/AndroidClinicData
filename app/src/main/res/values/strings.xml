@@ -4,6 +4,10 @@
     <string name="login">Login</string>
     <string name="sign_in">Sign In</string>
 
+    <string name="title_activity_appointment">AppointmentActivity</string>
+    <string name="title_activity_appointment_tabs">AppointmentTabs</string>
+    <string name="action_settings">Settings</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

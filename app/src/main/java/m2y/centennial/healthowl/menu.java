@@ -10,6 +10,7 @@ import android.widget.Button;
 public class menu extends AppCompatActivity {
 
     private Button mPatient;
+    private Button mAppointment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,16 @@ public class menu extends AppCompatActivity {
             }
         });
 
+        mAppointment = (Button) findViewById(R.id.appointmentsButton);
+        mAppointment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String testChoice = "test";
+                goAppointment(testChoice);
+
+            }
+        });
+
     }
 
     private void goPatientList(String testChoice){
@@ -33,5 +44,12 @@ public class menu extends AppCompatActivity {
         intent.putExtra("testChoice", testChoice);
         startActivity(intent);
     }
+
+    private void goAppointment(String testChoice){
+        Intent intent = new Intent(this, MainAppointments.class);
+        intent.putExtra("testChoice", testChoice);
+        startActivity(intent);
+    }
+
 
 }
