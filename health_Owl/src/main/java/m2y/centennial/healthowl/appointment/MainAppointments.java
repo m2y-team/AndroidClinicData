@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -26,9 +27,11 @@ public class MainAppointments extends AppCompatActivity {
 
     ArrayList prgmName;
     ImageButton appAppointment;
-    public static String[] appointment_names = new String[]{"Cross, Clara","Abot, Anna","Jo, Joe","xyz","tye"};
+    public static String[] appointment_names = new String[]
+            {"Cross, Clara","Abot, Anna","Jo, Joe","xyz","tye"};
     //public static String[] appointment_date = new String[]{"2016-11-04, 9:30 am", "2016-11-04, 11:30 am", "2016-11-04, 2:30 pm"};
-    public static String[] appointment_desc = new String[]{"Regular checkup", "Blood pressure", "Heart Problem","asdhj","sadhja"};
+    public static String[] appointment_desc = new String[]
+            {"Regular checkup", "Blood pressure", "Heart Problem","asdhj","sadhja"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +44,6 @@ public class MainAppointments extends AppCompatActivity {
         setSupportActionBar(myAppointmentToolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         getSupportActionBar().setTitle("Appointments");
 
         context=this;
@@ -50,9 +52,6 @@ public class MainAppointments extends AppCompatActivity {
 
 
         appAppointment = (ImageButton) findViewById(R.id.addAppointment);
-
-
-
         appAppointment.setOnClickListener(new View.OnClickListener() {
             String test = "appointment";
             public void onClick(View v) {
@@ -62,6 +61,25 @@ public class MainAppointments extends AppCompatActivity {
             }
         });
 
+        // Assign adapter to ListView
+        //lv.setAdapter(adapter);
+
+        // ListView Item Click Listener
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                // TODO Auto-generated method stub
+                // ListView Clicked item index
+                int itemPosition = position;
+
+                // ListView Clicked item value
+                String itemValue = (String) lv.getItemAtPosition(position);
+
+            }
+
+        });
 
     }
 
@@ -74,4 +92,6 @@ public class MainAppointments extends AppCompatActivity {
 
 
 
+
 }
+

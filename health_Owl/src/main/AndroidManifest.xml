@@ -51,15 +51,25 @@
 
         <activity android:name=".groups.GroupMainActivity" />
         <activity android:name=".groups.GroupAdd" />
-        <activity android:name=".groups.GroupDetails"></activity>
 
-        <activity android:name=".appointment.MainAppointments">
+        <activity android:name=".groups.GroupDetails">
+        </activity>
+
+        <activity
+            android:name=".appointment.MainAppointments"
             android:parentActivityName=".menu">
             <meta-data
                 android:name="android.support.ParentACTIVITY"
                 android:value=".menu" />
         </activity>
-        <activity android:name=".appointment.addAppointment"></activity>
+
+        <activity
+            android:name=".appointment.addAppointment"
+            android:parentActivityName=".appointment.MainAppointments">
+            <meta-data
+                android:name="android.support.ParentACTIVITY"
+                android:value=".appointment.MainAppointments" />
+        </activity>
     </application>
 
 </manifest>

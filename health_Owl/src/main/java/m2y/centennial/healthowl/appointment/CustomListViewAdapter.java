@@ -54,6 +54,7 @@ import m2y.centennial.healthowl.R;
             TextView tv;
             TextView sub;
         }
+
         @Override
         public View getView(final int position, View convertView, ViewGroup parent) {
             // TODO Auto-generated method stub
@@ -70,17 +71,20 @@ import m2y.centennial.healthowl.R;
                 public void onClick(View v) {
                     // TODO Auto-generated method stub
                     Toast.makeText(context, "You Clicked "+result[position], Toast.LENGTH_LONG).show();
+                    //goAppointmentTabs(result[position]);
                 }
             });
             return rowView;
 
-
         }
 
-//    private void goAppointmentTabs(String Appointment){
-//        Intent intent = new Intent(this, AppointmentTabs.class);
-//        intent.putExtra("Appointment", Appointment);
-//        startActivity(intent);
-//    }
+    /*
+    private void goAppointmentTabs(String Appointment){
+        Intent intent = new Intent(this, AppointmentTabs.class);
+        intent.putExtra("Appointment", Appointment);
+        startActivity(intent);
+    }*/
+
+
 
     }
