@@ -14,7 +14,7 @@ public class AppointmentTabs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appointment_tabs);
-        
+
 
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
